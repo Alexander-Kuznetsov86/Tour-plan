@@ -380,12 +380,13 @@ template {
 }
 
 .search {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  position: relative;
   height: 40px;
   overflow: hidden;
+  border-radius: 6px;
 }
 
 .search__input {
@@ -395,19 +396,17 @@ template {
   padding-right: 75px;
   background-color: #f5fafe;
   border: none;
-  border-radius: 6px;
   font-size: 12px;
   line-height: 15px;
   color: #333;
 }
 
 .search__button {
+  width: 65px;
   position: absolute;
   top: 0;
   right: 0;
-  width: 65px;
   height: 100%;
-  padding: 0;
   border: none;
   background-color: #ec1f46;
 }
