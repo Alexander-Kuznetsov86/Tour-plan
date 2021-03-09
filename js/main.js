@@ -10,4 +10,8 @@ const swiper = new Swiper('.swiper-container', {
   autoplay: {
    delay: 4000,
   },
+  keyboard: {
+    enabled: true,
+    onlyInViewport: false,
+  },
 });
