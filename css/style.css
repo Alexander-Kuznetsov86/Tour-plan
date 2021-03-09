@@ -639,8 +639,8 @@ template {
   background-size: 10px;
 }
 
-.slider-button:focus {
-  outline: none;
+.slider-button:focus, .slider-button:active {
+  outline: 0;
 }
 
 .slider-button--next {
