@@ -977,9 +977,9 @@ template {
   }
   .booking {
     height: 210px;
-    margin-bottom: 20px;
   }
   .map {
+    margin-bottom: 40px;
     height: 180px;
   }
 }
