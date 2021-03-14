@@ -14,7 +14,7 @@ var hotelSlider = new Swiper(".hotel-slider", {
     enabled: true,
     onlyInViewport: false,
   },
-  effect: "cube",
+  effect: "coverflow",
 });
 
 var reviewsSlider = new Swiper(".reviews-slider", {
@@ -23,10 +23,12 @@ var reviewsSlider = new Swiper(".reviews-slider", {
 
   // Navigation arrows
   navigation: {
-    nextEl: ".reviews-slider__button--prev",
-    prevEl: ".reviews-slider__button--next",
+    nextEl: ".reviews-slider__button--next",
+    prevEl: ".reviews-slider__button--prev",
   },
   autoplay: {
     delay: 9000,
   },
 });
+
+$(".parallax-window").parallax({ imageSrc: '/img/jpg/newsletter-bg.jpg', });

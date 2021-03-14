@@ -10,17 +10,17 @@ body {
   background-color: #f5fafe;
 }
 
-.container {
-  max-width: 1110px;
-  margin: auto;
-}
-
 img {
   max-width: 100%;
 }
 
 button {
   padding: 0;
+}
+
+.container {
+  max-width: 1110px;
+  margin: auto;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -813,7 +813,6 @@ template {
   position: relative;
   padding-top: 97px;
   padding-bottom: 87px;
-  background-image: url(/img/jpg/newsletter-bg.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
