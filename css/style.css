@@ -1212,13 +1212,20 @@ template {
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0);
-    margin-left: -65px;
+    margin-left: -90px;
   }
   .reviews-slider__button--next {
     right: 50%;
     -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
-    margin-right: -65px;
+    margin-right: -90px;
+  }
+  .reviews-slider__text {
+    max-width: 455px;
+  }
+  .reviews__title {
+    font-size: 30px;
+    line-height: 38px;
   }
 }
 
@@ -1268,11 +1275,15 @@ template {
   .map {
     height: 180px;
   }
-  .title__newsletter {
-    margin-bottom: 37px;
-  }
   .newsletter__subscribe {
     max-width: 280px;
+  }
+  .reviews__title {
+    max-width: 245px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 18px;
+    line-height: 23px;
   }
 }
 /*# sourceMappingURL=style.css.map */

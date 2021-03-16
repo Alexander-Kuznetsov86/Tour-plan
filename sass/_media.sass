@@ -116,11 +116,16 @@
         &--prev
           left: 50%
           transform: translate(-50%, 0)
-          margin-left: -65px
+          margin-left: -90px
         &--next
           right: 50%
           transform: translate(50%, 0)
-          margin-right: -65px
+          margin-right: -90px
+      &__text
+        max-width: 455px
+    &__title
+      font-size: 30px
+      line-height: 38px
 @media (max-width: 576px)
   .logo
     width: 99px
@@ -128,7 +133,7 @@
     &__slider
       margin-bottom: 20px
     &-slider
-      height: 250px  
+      height: 250px
   .newsletter
     padding-top: 76px
     padding-bottom: 83px
@@ -154,7 +159,13 @@
     height: 210px
   .map
     height: 180px
-  .title__newsletter
-    margin-bottom: 37px
-  .newsletter__subscribe
-    max-width: 280px
+  .newsletter
+    &__subscribe
+      max-width: 280px
+  .reviews
+    &__title
+      max-width: 245px
+      margin-left: auto
+      margin-right: auto
+      font-size: 18px
+      line-height: 23px
