@@ -567,6 +567,9 @@ template {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .hotel-reservation {
@@ -1043,7 +1046,7 @@ template {
     width: 590px;
   }
   .hotel-slider {
-    margin-right: 20px;
+    max-width: 590px;
   }
   .hotel-slider__image {
     width: 100%;
@@ -1097,8 +1100,7 @@ template {
             justify-content: space-between;
   }
   .hotel-slider {
-    width: 100%;
-    margin-right: 0;
+    max-width: 700px;
   }
   .booking {
     width: 340px;
@@ -1181,6 +1183,7 @@ template {
     min-height: 450px;
   }
   .hotel-slider {
+    width: 100%;
     height: 350px;
   }
   .booking {
