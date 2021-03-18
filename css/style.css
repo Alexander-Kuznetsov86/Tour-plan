@@ -825,20 +825,20 @@ template {
 }
 
 .packages-grid {
+  grid-gap: 30px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[2];
-      grid-template-rows: repeat(2, 1fr);
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  grid-gap: 30px;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
 }
 
 .packages-card {
-  max-height: 500px;
   position: relative;
-  border-radius: 8px;
+  max-height: 500px;
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .packages-card__image {
