@@ -930,6 +930,10 @@ template {
   color: #fff;
 }
 
+.packages__description--secondary {
+  display: none;
+}
+
 .packages__subtitle {
   margin: 0;
   font-weight: bold;
@@ -1023,6 +1027,10 @@ template {
   border: none;
   color: #fff;
   cursor: pointer;
+  font-family: 'Nunito', sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 19px;
 }
 
 .packages__button:focus {
@@ -1444,7 +1452,7 @@ template {
     width: 340px;
   }
   .packages-grid {
-    grid-gap: 10px;
+    grid-gap: 20px;
   }
   .packages__first {
     -ms-grid-columns: 230px 230px 1fr;
@@ -1595,6 +1603,66 @@ template {
   .hotel-slider {
     width: 100%;
     height: 350px;
+  }
+  .packages-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+    grid-row-gap: 20px;
+  }
+  .packages__grid {
+    margin-bottom: 40px;
+  }
+  .packages-card__image {
+    width: 100%;
+  }
+  .packages__first {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .packages__first::before {
+    content: 'Flash Offer';
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 60px;
+    height: 18px;
+    padding-top: 7px;
+    padding-left: 9px;
+    font-weight: 600;
+    font-size: 8px;
+    line-height: 10px;
+  }
+  .packages__second {
+    -ms-grid-column: 1;
+        grid-column-start: 1;
+    grid-column-end: 1;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+  .packages-info {
+    max-width: 51.5%;
+    padding: 15px;
+  }
+  .packages-short {
+    width: 100%;
+    padding: 15px;
+  }
+  .packages__description--secondary {
+    display: block;
+  }
+  .packages__button {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    padding: 7px 15px;
+    font-size: 12px;
   }
   .booking {
     width: 100%;
