@@ -836,7 +836,7 @@ template {
 
 .packages-card {
   position: relative;
-  max-height: 500px;
+  height: 500px;
   overflow: hidden;
   border-radius: 8px;
 }
@@ -930,10 +930,6 @@ template {
   color: #fff;
 }
 
-.packages__description--secondary {
-  display: none;
-}
-
 .packages__subtitle {
   margin: 0;
   font-weight: bold;
@@ -942,9 +938,16 @@ template {
 }
 
 .packages__description {
-  margin-top: 27px;
+  overflow: auto;
+  height: 165px;
+  margin-top: 17px;
+  margin-bottom: 20px;
   font-size: 14px;
   line-height: 160.6%;
+}
+
+.packages__description--secondary {
+  display: none;
 }
 
 .packages__link {
@@ -1385,6 +1388,11 @@ template {
     -ms-grid-columns: 317px 317px 317px;
         grid-template-columns: 317px 317px 317px;
   }
+  .packages-card__image {
+    height: 50%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
   .packages-card__image--main {
     height: 100%;
     -o-object-fit: cover;
@@ -1393,7 +1401,10 @@ template {
   .packages-info {
     padding: 20px;
   }
-  .packages .card {
+  .packages__description {
+    margin-bottom: 50px;
+  }
+  .card {
     width: 230px;
     height: 230px;
   }
@@ -1485,8 +1496,8 @@ template {
     line-height: 20px;
   }
   .packages__description {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 50px;
+    margin-bottom: 55px;
     font-size: 12px;
     line-height: 18px;
   }
@@ -1604,6 +1615,11 @@ template {
     width: 100%;
     height: 350px;
   }
+  .packages__title {
+    margin-bottom: 45px;
+    font-size: 30px;
+    line-height: 35px;
+  }
   .packages-grid {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1617,6 +1633,8 @@ template {
   }
   .packages-card__image {
     width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
   .packages__first {
     position: relative;
@@ -1647,8 +1665,8 @@ template {
             flex-direction: row;
   }
   .packages-info {
-    max-width: 51.5%;
-    padding: 15px;
+    width: 100%;
+    padding: 25px;
   }
   .packages-short {
     width: 100%;
@@ -1656,6 +1674,7 @@ template {
   }
   .packages__description--secondary {
     display: block;
+    margin-bottom: 75px;
   }
   .packages__button {
     position: absolute;
@@ -1724,6 +1743,44 @@ template {
   }
   .hotel-slider {
     height: 250px;
+  }
+  .packages__title {
+    margin-bottom: 25px;
+    font-size: 24px;
+    line-height: 30px;
+  }
+  .packages__first {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .packages-info {
+    height: 100%;
+    width: 100%;
+  }
+  .packages-card__image {
+    min-height: 50%;
+    width: 100%;
+  }
+  .packages__second {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .packages-short {
+    padding: 15px;
+  }
+  .packages__description {
+    display: none;
+  }
+  .packages__button {
+    position: absolute;
+    bottom: 30px;
+    right: 25px;
+    padding: 7px 15px;
+    font-size: 12px;
   }
   .newsletter {
     padding-top: 76px;

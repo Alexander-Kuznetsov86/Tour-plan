@@ -18,14 +18,18 @@
       grid-template-columns: 317px 317px 317px
     &-card
       &__image
+        height: 50%
+        object-fit: cover
         &--main
           height: 100%
           object-fit: cover
     &-info
       padding: 20px
-    .card
-      width: 230px
-      height: 230px
+    &__description
+      margin-bottom: 50px
+  .card
+    width: 230px
+    height: 230px
 
 @media (max-width: 992px)
   .container, .newsletter-container
@@ -83,8 +87,8 @@
       font-size: 14px
       line-height: 20px
     &__description
-      margin-top: 10px
-      margin-bottom: 10px
+      margin-top: 50px
+      margin-bottom: 55px
       font-size: 12px
       line-height: 18px
     &__link
@@ -167,6 +171,10 @@
       width: 100%
       height: 350px
   .packages
+    &__title
+      margin-bottom: 45px
+      font-size: 30px
+      line-height: 35px
     &-grid
       grid-template-columns: 1fr
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr
@@ -177,6 +185,7 @@
     &-card
       &__image
         width: 100%
+        object-fit: cover
     &__first
       position: relative
       display: flex
@@ -197,14 +206,15 @@
       grid-column-end: 1
       flex-direction: row
     &-info
-      max-width: 51.5%
-      padding: 15px
+      width: 100%
+      padding: 25px
     &-short
       width: 100%
       padding: 15px
     &__description
       &--secondary
         display: block
+        margin-bottom: 75px
     &__button
       position: absolute
       bottom: 30px
@@ -253,6 +263,32 @@
       margin-bottom: 20px
     &-slider
       height: 250px
+  .packages
+    &__title
+      margin-bottom: 25px
+      font-size: 24px
+      line-height: 30px
+    &__first
+      flex-direction: column
+    &-info
+      height: 100%
+      width: 100%
+    &-card
+      &__image
+        min-height: 50%
+        width: 100%
+    &__second
+      flex-direction: column
+    &-short
+      padding: 15px
+    &__description
+      display: none
+    &__button
+      position: absolute
+      bottom: 30px
+      right: 25px
+      padding: 7px 15px
+      font-size: 12px
   .newsletter
     padding-top: 76px
     padding-bottom: 83px
