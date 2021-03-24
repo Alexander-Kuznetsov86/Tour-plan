@@ -10,6 +10,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
 
@@ -17,7 +18,7 @@
     <header class="navbar navbar__mobile--fixed">
       <div class="container">
         <div class="navbar-top">
-          <a href="#!" class="logo">
+          <a href="#!" class="logo" data-aos="fade-right" data-aos-delay="300">
             <img src="img/svg/header-logo.svg" alt="Logo: Best Tour Plan" class="logo__image" />
           </a>
 
@@ -28,7 +29,12 @@
             </button>
           </form>
 
-          <a href="#!" class="user navbar__user navbar__user--mobile--hidden">
+          <a
+            href="#!"
+            class="user navbar__user navbar__user--mobile--hidden"
+            data-aos="fade-left"
+            data-aos-delay="300"
+          >
             <img src="img/jpg/avatar-ico.jpg" alt="Avatar: Nathan" class="user__avatar" />
             <span class="user__name">Nathan</span>
           </a>
@@ -190,7 +196,9 @@
                 </a>
               </div>
               <!-- /.booking-call-center -->
-              <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">View Other Options</button>
+              <button data-toggle="modal" data-href="#booking-modal" class="button booking__button">
+                View Other Options
+              </button>
             </div>
             <!-- /.booking -->
             <div class="map">
@@ -374,9 +382,20 @@
       data-image-src="/img/jpg/newsletter-bg.jpg"
     >
       <div class="newsletter-container">
-        <h2 class="newsletter-title">
+        <h2
+          class="newsletter-title"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           subscribe to our
-          <span class="newsletter-title__strong">Newsletter</span>
+          <span
+            class="newsletter-title__strong"
+            data-aos="fade-left"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
+            >Newsletter</span
+          >
         </h2>
         <form class="subscribe newsletter__subscribe" action="send.php" method="POST">
           <input
@@ -384,6 +403,9 @@
             name="email"
             type="email"
             placeholder="Your email address"
+            data-aos="fade-right"
+            data-aos-offset="300"
+            data-aos-easing="ease-in-sine"
           />
           <button class="subscribe__button" type="submit">Send</button>
         </form>
@@ -510,7 +532,12 @@
       <div class="container">
         <h2 class="activities__title">Other Activities</h2>
         <ul class="activities-wrapper">
-          <li class="card activities__card">
+          <li
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="100"
+          >
             <img
               class="card__image"
               src="img/jpg/activity-1.jpg"
@@ -519,12 +546,22 @@
             <span class="card__title">The curious corner of chamarel</span>
             <button class="card__button">Book Now</button>
           </li>
-          <li class="card activities__card">
+          <li
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="300"
+          >
             <img class="card__image" src="img/jpg/activity-2.jpg" alt="Gymkhana club golf course" />
             <span class="card__title">Gymkhana club golf course</span>
             <button class="card__button">Book Now</button>
           </li>
-          <li class="card activities__card">
+          <li
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="500"
+          >
             <img
               class="card__image"
               src="img/jpg/activity-3.jpg"
@@ -533,7 +570,12 @@
             <span class="card__title">Tamarind falls hiking trip - full day</span>
             <button class="card__button">Book Now</button>
           </li>
-          <li class="card activities__card">
+          <li
+            class="card activities__card"
+            data-aos="fade-up"
+            data-aos-anchor-placement="center-bottom"
+            data-aos-delay="700"
+          >
             <img
               class="card__image"
               src="img/jpg/activity-4.jpg"
@@ -648,29 +690,16 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-23">Send us a message</h3>
-<<<<<<< HEAD
             <form action="#" class="footer__form">
-              <input type="text" class="input footer__input" placeholder="Your Full Name*" />
-              <input type="tel" class="input footer__input" placeholder="Phone Number*" />
-              <textarea class="msg footer__msg" cols="30" rows="10" placeholder="Message"></textarea>
-              <button class="button" type="submit">Send</button>
-=======
-            <form action="send.php" method="POST" class="footer__form">
               <input
                 type="text"
                 class="input footer__input"
                 placeholder="Your Full Name*"
-                name="name"
+                required
               />
-              <input
-                type="tel"
-                class="input footer__input"
-                placeholder="Phone Number*"
-                name="phone"
-              />
-              <textarea class="footer__msg" placeholder="Message" name="message"></textarea>
-              <button class="footer__button" type="submit">Send</button>
->>>>>>> b4faa438585fc32cd75c67116dc12ed2696f2aba
+              <input type="tel" class="input footer__input" placeholder="Phone Number*" required />
+              <textarea class="msg footer__msg" placeholder="Message"></textarea>
+              <button class="button" type="submit">Send</button>
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
@@ -689,16 +718,38 @@
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
-        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close"></a>
+        <a href="#!" class="modal__close" id="modal-esc"
+          ><img src="img/svg/close.svg" alt="icon: close"
+        /></a>
         <h3 class="modal__title modal__title--mb-23">Booking</h3>
-            <form action="#" class="modal__form">
-              <input type="text" class="input modal__input" placeholder="Your Full Name*" />
-              <input type="tel" class="input modal__input" placeholder="Phone Number*" />
-              <input type="email" class="input modal__input" placeholder="Email*">
-              <textarea class="msg modal__msg" cols="30" rows="10" placeholder="Message"></textarea>
-              <button class="button" type="submit">Send</button>
-              <span class="modal__info">* Required Fields</span>
-            </form>
+        <form action="#" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+            id="phone__us"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="msg modal__msg" placeholder="Message" name="message"></textarea>
+          <button class="button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
       </div>
       <!-- /.modal__dialog -->
     </div>
@@ -707,24 +758,50 @@
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
-        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close"></a>
+        <a href="#!" class="modal__close" id="modal-esc"
+          ><img src="img/svg/close.svg" alt="icon: close"
+        /></a>
         <h3 class="modal__title modal__title--mb-23">Send us a feedback</h3>
-            <form action="#" class="modal__form">
-              <input type="text" class="input modal__input" placeholder="Your Full Name*" />
-              <input type="tel" class="input modal__input" placeholder="Phone Number*" />
-              <input type="email" class="input modal__input" placeholder="Email*">
-              <textarea class="msg modal__msg" placeholder="Message"></textarea>
-              <button class="button" type="submit">Send</button>
-              <span class="modal__info">* Required Fields</span>
-            </form>
+        <form action="#" class="modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input"
+            placeholder="Phone Number*"
+            name="phone"
+            required
+            minlength="2"
+            id="phone__us"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="msg modal__msg" placeholder="Message" name="message"></textarea>
+          <button class="button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
       </div>
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
     <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
-    <script src="js/main.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/parallax.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

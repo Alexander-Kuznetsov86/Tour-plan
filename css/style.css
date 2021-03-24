@@ -1559,10 +1559,18 @@ template {
       flex-basis: 48%;
 }
 
+.footer__input:focus {
+  outline: none;
+}
+
 .footer__msg {
   -ms-flex-preferred-size: 100%;
       flex-basis: 100%;
   margin-bottom: 23px;
+}
+
+.footer__msg:focus {
+  outline: none;
 }
 
 .footer__info {
