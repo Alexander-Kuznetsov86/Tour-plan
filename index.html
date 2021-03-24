@@ -48,24 +48,25 @@
           <ul class="navbar-menu">
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <a href="#!" class="user navbar__user navbar__user--mobile--visible">
-            <img src="img/jpg/avatar-ico.jpg" alt="Avatar: Nathan" class="user__avatar" />
-            <span class="user__name user__name--light">Nathan</span>
-          </a>
-          <!-- / .user -->
+                <img src="img/jpg/avatar-ico.jpg" alt="Avatar: Nathan" class="user__avatar" />
+                <span class="user__name user__name--light">Nathan</span>
+              </a>
+              <!-- / .user -->
             </li>
             <li class="navbar-menu__item navbar-menu__item--mobile--visible">
               <form action="#!" class="search navbar__search navbar__search--mobile--visible">
-            <input type="text" class="search__input" placeholder="Search Location" />
-            <button class="search__button" type="submit">
-              <img src="img/svg/search-ico.svg" alt="Icon: Search" />
-            </button>
-          </form>
-          
+                <input type="text" class="search__input" placeholder="Search Location" />
+                <button class="search__button" type="submit">
+                  <img src="img/svg/search-ico.svg" alt="Icon: Search" />
+                </button>
+              </form>
             </li>
             <li class="navbar__item"><a href="#!" class="navbar-menu__link">All Deals</a></li>
             <li class="navbar__item"><a href="#!" class="navbar-menu__link">Hotels</a></li>
             <li class="navbar__item"><a href="#!" class="navbar-menu__link">Activities</a></li>
-            <li class="navbar__item"><a href="#!" class="navbar-menu__link">Hotel Day Packages</a></li>
+            <li class="navbar__item">
+              <a href="#!" class="navbar-menu__link">Hotel Day Packages</a>
+            </li>
             <li class="navbar__item"><a href="#!" class="navbar-menu__link">Restaurants</a></li>
             <li class="navbar__item"><a href="#!" class="navbar-menu__link">Events</a></li>
             <li class="navbar__item"><a href="#!" class="navbar-menu__link">Rodrigues</a></li>
@@ -377,8 +378,13 @@
           subscribe to our
           <span class="newsletter-title__strong">Newsletter</span>
         </h2>
-        <form class="subscribe newsletter__subscribe" action="#!">
-          <input class="subscribe__input" type="text" placeholder="Your email address" />
+        <form class="subscribe newsletter__subscribe" action="send.php" method="POST">
+          <input
+            class="subscribe__input"
+            name="email"
+            type="email"
+            placeholder="Your email address"
+          />
           <button class="subscribe__button" type="submit">Send</button>
         </form>
       </div>
@@ -642,11 +648,29 @@
           <!-- /.footer__contact-details -->
           <div class="footer__contact-form">
             <h3 class="footer__title footer__title--mb-23">Send us a message</h3>
+<<<<<<< HEAD
             <form action="#" class="footer__form">
               <input type="text" class="input footer__input" placeholder="Your Full Name*" />
               <input type="tel" class="input footer__input" placeholder="Phone Number*" />
               <textarea class="msg footer__msg" cols="30" rows="10" placeholder="Message"></textarea>
               <button class="button" type="submit">Send</button>
+=======
+            <form action="send.php" method="POST" class="footer__form">
+              <input
+                type="text"
+                class="input footer__input"
+                placeholder="Your Full Name*"
+                name="name"
+              />
+              <input
+                type="tel"
+                class="input footer__input"
+                placeholder="Phone Number*"
+                name="phone"
+              />
+              <textarea class="footer__msg" placeholder="Message" name="message"></textarea>
+              <button class="footer__button" type="submit">Send</button>
+>>>>>>> b4faa438585fc32cd75c67116dc12ed2696f2aba
               <span class="footer__info">* Required Fields</span>
             </form>
           </div>
