@@ -53,6 +53,13 @@ figure {
   cursor: pointer;
 }
 
+.invalid {
+  color: #ec1f46;
+  text-decoration: underline;
+  font-family: 'Mulish', sans-serif;
+  font-size: 14px;
+}
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -1033,12 +1040,13 @@ template {
   position: absolute;
   width: 100%;
   height: 100%;
-  border: none;
   padding-left: 33px;
   padding-right: 75px;
+  margin-bottom: 20px;
   font-weight: 300;
   font-size: 14px;
   line-height: 18px;
+  border: none;
   color: #BDBDBD;
 }
 
@@ -1379,6 +1387,10 @@ template {
 }
 
 .footer__input {
+  width: 100%;
+}
+
+.footer__input-group {
   margin-bottom: 15px;
   flex-basis: 48%;
 }
@@ -1467,7 +1479,7 @@ template {
 
 .modal__input {
   width: 100%;
-  margin-bottom: 15px;
+  margin-top: 15px;
   color: #bdbdbd;
 }
 
@@ -1478,6 +1490,7 @@ template {
 .modal__msg {
   width: 100%;
   min-height: 123px;
+  margin-top: 15px;
   margin-bottom: 15px;
   color: #bdbdbd;
 }
@@ -1908,6 +1921,9 @@ template {
     margin-left: auto;
   }
   .footer__input {
+    height: 40px;
+  }
+  .footer__input-group {
     flex-basis: 100%;
   }
 }
@@ -2021,6 +2037,8 @@ template {
     grid-column: 1;
   }
   .footer__contact-form {
+    flex-wrap: wrap;
+    flex-direction: column;
     position: relative;
     grid-row: 7;
     grid-column: 1;
@@ -2034,31 +2052,24 @@ template {
     padding: 22px;
     width: 300px;
   }
-  .footer__input {
-    height: 40px;
-    order: -1;
-  }
-  .footer__msg {
-    order: -1;
-  }
   .footer__info {
-    order: -1;
     margin-bottom: 15px;
   }
   .modal__dialog {
     padding: 22px;
     width: 300px;
   }
-  .modal__input {
-    height: 40px;
-    order: -1;
+  .modal__button {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
-  .modal__msg {
-    order: -1;
+  .modal__form {
+    position: relative;
   }
   .modal__info {
-    order: -1;
-    margin-bottom: 15px;
+    position: absolute;
+    bottom: 80px;
+    left: 0;
   }
 }
 
