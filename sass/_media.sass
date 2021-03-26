@@ -264,8 +264,8 @@
       margin-bottom: 40px
     &-card
       &__image
-        width: 100%
-        object-fit: cover
+        object-fit: cover        
+        width: 288px
     &__first
       position: relative
       display: flex
@@ -286,18 +286,20 @@
       grid-column-end: 1
       flex-direction: row
     &-info
-      width: 100%
       padding: 25px
     &-short
       width: 100%
-      padding: 15px
+      padding: 35px 15px 15px 15px
     &__description
+      margin-top: 40px
+      margin-bottom: 15px
       &--secondary
         display: block
-        margin-bottom: 75px
+        margin-top: 40px
+        margin-bottom: 15px
     &__button
       position: absolute
-      bottom: 30px
+      bottom: 70px
       right: 25px
       padding: 7px 15px
       font-size: 12px
@@ -356,22 +358,28 @@
     &-slider
       height: 250px
   .packages
+    &__grid
+      
     &__title
       margin-bottom: 25px
       font-size: 24px
       line-height: 30px
     &__first
+      height: 100%
       flex-direction: column
     &-info
       height: 100%
       width: 100%
     &-card
       &__image
-        min-height: 50%
         width: 100%
+        max-height: 250px
     &__second
+      height: 100%
       flex-direction: column
     &-short
+      height: 250px
+      width: 100%
       padding: 15px
     &__description
       display: none
