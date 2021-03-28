@@ -15,7 +15,7 @@
   </head>
 
   <body>
-    <header class="navbar navbar__mobile--fixed">
+    <header class="navbar navbar-mobile navbar-mobile--fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#!" class="logo" data-aos="fade-right" data-aos-delay="300">
@@ -118,7 +118,7 @@
             >
           </div>
           <!-- /.hotel-info__text -->
-          <div data-toggle="modal" data-href="#rating-modal" class="rating hotel-info__rating">
+          <div class="rating hotel-info__rating">
             <span class="rating__text">User Rattings</span>
             <span class="rating__counter">4.5/5</span>
           </div>
@@ -177,11 +177,11 @@
                 <div class="booking-room">
                   <div class="booking-room__text">
                     <img src="img/svg/user-ico.svg" alt="Icon: user" class="booking-room__icon" />
-                    <span class="booking__description">2 x Guests</span>
+                    <span class="booking-room__description">2 x Guests</span>
                   </div>
-                  <div class="booking__text">
-                    <img src="img/svg/home-ico.svg" alt="Icon: home" class="booking__icon" />
-                    <span class="booking__description">1 x Room</span>
+                  <div class="booking-room__text">
+                    <img src="img/svg/home-ico.svg" alt="Icon: home" class="booking-room__icon" />
+                    <span class="booking-room__description">1 x Room</span>
                   </div>
                   <!-- /.booking__text -->
                 </div>
@@ -257,7 +257,9 @@
                 <span class="packages__room">1 x Room</span>
                 <span class="packages__price">$ 10,500</span>
                 <strong class="packages__discont">$ 8,500</strong>
-                <button class="packages__button">Book Now</button>
+                <button class="packages__button" data-toggle="modal" data-href="#Hotel-Blue-Haven">
+                  Book Now
+                </button>
               </div>
               <!-- /.packages-wrap -->
             </div>
@@ -287,7 +289,9 @@
               <span class="packages__room">1 x Room</span>
               <span class="packages__price">$ 8,500</span>
               <strong class="packages__discont">$ 3,000</strong>
-              <button class="packages__button">Book Now</button>
+              <button class="packages__button" data-toggle="modal" data-href="#Lux-Belle-Mare">
+                Book Now
+              </button>
             </div>
             <!-- /.packages-short -->
           </div>
@@ -312,7 +316,9 @@
               <span class="packages__room">1 x Room</span>
               <span class="packages__price">$ 10,500</span>
               <strong class="packages__discont">$ 9,500</strong>
-              <button class="packages__button">Book Now</button>
+              <button class="packages__button" data-toggle="modal" data-href="#White-Palace">
+                Book Now
+              </button>
             </div>
             <!-- /.packages-short -->
           </div>
@@ -336,7 +342,9 @@
               <span class="packages__room">1 x Room</span>
               <span class="packages__price">$ 4,500</span>
               <strong class="packages__discont">$ 2,500</strong>
-              <button class="packages__button">Book Now</button>
+              <button class="packages__button" data-toggle="modal" data-href="#Luxury-Place">
+                Book Now
+              </button>
             </div>
             <!-- /.packages-short -->
           </div>
@@ -365,7 +373,9 @@
               <span class="packages__room">1 x Room</span>
               <span class="packages__price">$ 6,500</span>
               <strong class="packages__discont">$ 3,500</strong>
-              <button class="packages__button">Book Now</button>
+              <button class="packages__button" data-toggle="modal" data-href="#Hotel-Five-Star">
+                Book Now
+              </button>
             </div>
             <!-- /.packages-short -->
           </div>
@@ -545,7 +555,9 @@
               alt="The curious corner of chamarel"
             />
             <span class="card__title">The curious corner of chamarel</span>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-href="#card-modal--1" data-toggle="modal">
+              Book Now
+            </button>
           </li>
           <li
             class="card activities__card"
@@ -555,7 +567,9 @@
           >
             <img class="card__image" src="img/jpg/activity-2.jpg" alt="Gymkhana club golf course" />
             <span class="card__title">Gymkhana club golf course</span>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-href="#card-modal--2" data-toggle="modal">
+              Book Now
+            </button>
           </li>
           <li
             class="card activities__card"
@@ -569,7 +583,9 @@
               alt="Tamarind falls hiking trip - full day"
             />
             <span class="card__title">Tamarind falls hiking trip - full day</span>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-href="#card-modal--3" data-toggle="modal">
+              Book Now
+            </button>
           </li>
           <li
             class="card activities__card"
@@ -583,7 +599,9 @@
               alt="The blue marine discovery quest"
             />
             <span class="card__title">The blue marine discovery quest</span>
-            <button class="card__button">Book Now</button>
+            <button class="card__button" data-href="#card-modal--4" data-toggle="modal">
+              Book Now
+            </button>
           </li>
           <!-- /.card -->
         </ul>
@@ -675,16 +693,25 @@
                   <img class="footer__icon" src="img/svg/phone-call-footer.svg" alt="icon: phone" />
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                Tel (business hours) : 269 1500<br />
-                Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am– 20:00 pm)<br />
-                Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
+                <div class="footer-phones">
+                  <a class="footer-phones__link" href="269 1500">Tel (business hours) : 269 1500</a
+                  ><br />
+                  <a class="footer-phones__link" href="52-56-61-38"
+                    >Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am– 20:00 pm)</a
+                  ><br />
+                  <a class="footer-phones__link" href="52-56-61-38"
+                    >Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)</a
+                  >
+                </div>
               </li>
               <li class="footer__item footer__item--mb-20">
                 <div class="footer__icon-wrapper">
                   <img class="footer__icon" src="img/svg/email.svg" alt="icon: email" />
                 </div>
                 <!-- /.footer__icon-wrapper -->
-                cherly.lawson@example.com
+                <a class="footer-mail" href="mailto:cherly.lawson@example.com"
+                  >cherly.lawson@example.com</a
+                >
               </li>
             </ul>
           </div>
@@ -705,9 +732,10 @@
               <div class="footer__input-group">
                 <input
                   type="tel"
-                  class="input footer__input phone__us"
+                  class="input footer__input phone-us"
                   placeholder="+0 (000) 000 00 00"
                   name="phone"
+                  minlength="11"
                   required
                 />
               </div>
@@ -732,9 +760,7 @@
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
-        <a href="#!" class="modal__close" id="modal-esc"
-          ><img src="img/svg/close.svg" alt="icon: close"
-        /></a>
+        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close" /></a>
         <h3 class="modal__title modal__title--mb-23">Booking</h3>
         <form action="send.php" method="POST" class="form modal__form">
           <input
@@ -747,7 +773,7 @@
           />
           <input
             type="tel"
-            class="input modal__input phone__us"
+            class="input modal__input phone-us"
             placeholder="+0 (000) 000 00 00"
             name="phone"
             required
@@ -767,14 +793,12 @@
       <!-- /.modal__dialog -->
     </div>
     <!-- /.modal -->
-    <div class="modal" id="rating-modal">
+    <div class="modal" id="card-modal--1">
       <div class="modal__overlay"></div>
       <!-- /.modal__overlay -->
       <div class="modal__dialog">
-        <a href="#!" class="modal__close" id="modal-esc"
-          ><img src="img/svg/close.svg" alt="icon: close"
-        /></a>
-        <h3 class="modal__title modal__title--mb-23">Send us a feedback</h3>
+        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close" /></a>
+        <h3 class="modal__title modal__title--mb-23">Book Now</h3>
         <form action="send.php" method="POST" class="form modal__form">
           <input
             type="text"
@@ -786,7 +810,311 @@
           />
           <input
             type="tel"
-            class="input modal__input phone__us"
+            class="input modal__input phone-us"
+            placeholder="+0 (000) 000 00 00"
+            name="phone"
+            required
+            minlength="2"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="msg modal__msg" placeholder="Message" name="message"></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="card-modal--2">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close" /></a>
+        <h3 class="modal__title modal__title--mb-23">Book Now</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone-us"
+            placeholder="+0 (000) 000 00 00"
+            name="phone"
+            required
+            minlength="2"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="msg modal__msg" placeholder="Message" name="message"></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="card-modal--3">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close" /></a>
+        <h3 class="modal__title modal__title--mb-23">Book Now</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone-us"
+            placeholder="+0 (000) 000 00 00"
+            name="phone"
+            required
+            minlength="2"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="msg modal__msg" placeholder="Message" name="message"></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="card-modal--4">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close" /></a>
+        <h3 class="modal__title modal__title--mb-23">Book Now</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone-us"
+            placeholder="+0 (000) 000 00 00"
+            name="phone"
+            required
+            minlength="2"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="msg modal__msg" placeholder="Message" name="message"></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="Hotel-Blue-Haven">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close" /></a>
+        <h3 class="modal__title modal__title--mb-23">Book Now</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone-us"
+            placeholder="+0 (000) 000 00 00"
+            name="phone"
+            required
+            minlength="2"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="msg modal__msg" placeholder="Message" name="message"></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="Lux-Belle-Mare">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close" /></a>
+        <h3 class="modal__title modal__title--mb-23">Book Now</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone-us"
+            placeholder="+0 (000) 000 00 00"
+            name="phone"
+            required
+            minlength="2"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="msg modal__msg" placeholder="Message" name="message"></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="White-Palace">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close" /></a>
+        <h3 class="modal__title modal__title--mb-23">Book Now</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone-us"
+            placeholder="+0 (000) 000 00 00"
+            name="phone"
+            required
+            minlength="2"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="msg modal__msg" placeholder="Message" name="message"></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="Luxury-Place">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close" /></a>
+        <h3 class="modal__title modal__title--mb-23">Book Now</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone-us"
+            placeholder="+0 (000) 000 00 00"
+            name="phone"
+            required
+            minlength="2"
+          />
+          <input
+            type="email"
+            class="input modal__input"
+            placeholder="Email*"
+            name="email"
+            required
+          />
+          <textarea class="msg modal__msg" placeholder="Message" name="message"></textarea>
+          <button class="button modal__button" type="submit">Send</button>
+          <span class="modal__info">* Required Fields</span>
+        </form>
+      </div>
+      <!-- /.modal__dialog -->
+    </div>
+    <!-- /.modal -->
+    <div class="modal" id="Hotel-Five-Star">
+      <div class="modal__overlay"></div>
+      <!-- /.modal__overlay -->
+      <div class="modal__dialog">
+        <a href="#!" class="modal__close"><img src="img/svg/close.svg" alt="icon: close" /></a>
+        <h3 class="modal__title modal__title--mb-23">Book Now</h3>
+        <form action="send.php" method="POST" class="form modal__form">
+          <input
+            type="text"
+            class="input modal__input"
+            placeholder="Your Full Name*"
+            name="name"
+            required
+            minlength="2"
+          />
+          <input
+            type="tel"
+            class="input modal__input phone-us"
             placeholder="+0 (000) 000 00 00"
             name="phone"
             required

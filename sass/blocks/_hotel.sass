@@ -15,7 +15,7 @@
   &-name
     font-weight: bold
     font-size: 24px
-    line-height: 30px
+    line-height: 24px
     text-transform: uppercase
   &-wrapper
     display: flex
@@ -74,6 +74,8 @@
         background-image: url(../img/svg/arrow-prev.svg)
 .stars
   flex-basis: 100%
+  margin-top: -6px
+  letter-spacing: -2px
 .offer
   padding: 4px 9px
   background-color: $primary
@@ -97,7 +99,7 @@
     font-size: 14px
     line-height: 18px
 .booking
-  padding: 28px
+  padding: 27px
   width: 350px
   min-height: 210px
   background-color: $dark
@@ -108,7 +110,7 @@
   &__info
     display: flex
     justify-content: space-between
-    margin-bottom: 9px
+    margin-bottom: 10px
   &__price
     display: flex
     flex-direction: column
@@ -119,21 +121,22 @@
     font-style: normal
     font-weight: 800
     font-size: 24px
-    line-height: 33px
+    line-height: 30px
   &__per-room
     font-size: 12px
     line-height: 16px
-  &__room
-    margin-top: 4px
-  &__text
+  &-room
     display: flex
-    align-items: center
-    justify-content: space-between
-    margin-bottom: 8px
-    font-size: 12px
-    line-height: 16px
-  &__descrption
-    margin-left: 9px
+    flex-direction: column
+    &__text
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-bottom: 5px
+      font-size: 12px
+      line-height: 22px
+    &__icon
+      padding-right: 13px
   &__call-center
     display: flex
     justify-content: space-between
@@ -153,7 +156,7 @@
     font-size: 18px
     line-height: 25px
   &__phone
-    margin-left: 8px
+    margin-left: 10px
   &__button
     width: 100%
     min-height: 45px
@@ -164,7 +167,7 @@
     color: inherit
     font-weight: 600
     font-size: 14px
-    line-height: 19px
+    line-height: 1px
 .map
   &__iframe
     width: 100%

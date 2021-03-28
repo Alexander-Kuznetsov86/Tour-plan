@@ -55,8 +55,10 @@ $(document).ready(function () {
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
   }
-  AOS.init();
+  
+    AOS.init();
 });
+
 
 // Обработка форм
 $(".form").each(function () {
@@ -80,4 +82,4 @@ $(".form").each(function () {
 });
 
 // Маска для телефона
-$('.phone__us').mask('+0 (000) 000 00 00');
+$('.phone-us').mask('+0 (000) 000 00 00');
