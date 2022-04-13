@@ -346,35 +346,35 @@ template {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/nunito-latin-regular.woff2") format("woff2"), url("../fonts/nunito-latin-regular.woff") format("woff");
+  src: url("../fonts/nunito-latin/nunito-latin-regular.woff2") format("woff2"), url("../fonts/nunito-latin/nunito-latin-regular.woff") format("woff");
 }
 /* nunito-700 - latin */
 @font-face {
   font-family: "Nunito";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/nunito-latin-700.woff2") format("woff2"), url("../fonts/nunito-latin-700.woff") format("woff");
+  src: url("../fonts/nunito-latin/nunito-latin-700.woff2") format("woff2"), url("../fonts/nunito-latin/nunito-latin-700.woff") format("woff");
 }
 /* mulish-regular - latin */
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/mulish-v10-latin-regular.woff2") format("woff2"), url("../fonts/mulish-v10-latin-regular.woff") format("woff");
+  src: url("../fonts/mulish-latin/mulish-latin-regular.woff2") format("woff2"), url("../fonts/mulish-latin/mulish-latin-regular.woff") format("woff");
 }
 /* mulish-600 - latin */
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 600;
-  src: url("../fonts/mulish-latin-600.woff2") format("woff2"), url("../fonts/mulish-latin-600.woff") format("woff");
+  src: url("../fonts/mulish-latin/mulish-latin-600.woff2") format("woff2"), url("../fonts/mulish-latin/mulish-latin-600.woff") format("woff");
 }
 /* mulish-700 - latin */
 @font-face {
   font-family: "Mulish";
   font-style: normal;
   font-weight: 700;
-  src: url("../fonts/mulish-latin-700.woff2") format("woff2"), url("../fonts/mulish-latin-700.woff") format("woff");
+  src: url("../fonts/mulish-latin/mulish-latin-700.woff2") format("woff2"), url("../fonts/mulish-latin/mulish-latin-700.woff") format("woff");
 }
 *, *::before, *::after {
   -webkit-box-sizing: border-box;
@@ -382,8 +382,9 @@ template {
 }
 
 body {
-  font-family: "Mulish";
+  font-family: "Mulish", sans-serif;
   color: #333;
+  background-color: #f5fafe;
 }
 
 .container {
@@ -406,29 +407,63 @@ body {
           align-items: center;
   padding: 40px 0;
 }
+.header__search {
+  margin-right: auto;
+  margin-left: 108px;
+}
 
 .search {
   position: relative;
   overflow: hidden;
+  border-radius: 6px;
 }
 .search__input {
   width: 350px;
   height: 40px;
-  padding-top: 12px;
-  padding-bottom: 12px;
   padding-left: 25px;
+  padding-right: 85px;
   font-size: 12px;
-  line-height: 15px;
+  line-height: 1.2;
   border: none;
-  border-radius: 6px;
   background-color: #f5fafe;
+  outline: none;
+}
+.search__input:focus, .search__input:active {
+  border: solid 2px #ec1f46;
 }
 .search__button {
   position: absolute;
   top: 0;
   right: 0;
   width: 65px;
-  height: 40px;
+  height: 100%;
   border: none;
-  font-family: inherit;
+  background-color: #ec1f46;
+  background-image: url(../img/svg/search-ico.svg);
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  cursor: pointer;
+}
+
+.user {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+  line-height: 1.4px;
+  text-decoration: none;
+  color: #333;
+}
+.user__avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.user__name {
+  margin-left: 18px;
 }/*# sourceMappingURL=style.css.map */

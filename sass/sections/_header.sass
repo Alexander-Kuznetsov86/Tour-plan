@@ -6,30 +6,55 @@
     justify-content: space-between
     align-items: center
     padding: 40px 0
-
+  &__search
+    margin-right: auto
+    margin-left: 108px
 .search
   position: relative
   overflow: hidden
+  border-radius: 6px
   &__input
     width: 350px
     height: 40px
-    padding-top: 12px
-    padding-bottom: 12px
     padding-left: 25px
+    padding-right: 85px
 
     font-size: 12px
-    line-height: 15px
+    line-height: 1.2
 
     border: none
-    border-radius: 6px
     background-color: #f5fafe
+    outline: none
+  &__input:focus,
+  &__input:active
+    border: solid 2px $primary 
+
   &__button
     position: absolute
     top: 0
     right: 0
     width: 65px
-    height: 40px
-    
+    height: 100%
+
     border: none
-    // background-color: $primary
-    font-family: inherit
+    background-color: $primary
+    background-image: url(../img/svg/search-ico.svg)
+    background-repeat: no-repeat
+    background-position: 50% 50%
+
+    cursor: pointer
+
+.user
+  display: flex
+  align-items: center
+  font-size: 14px
+  line-height: 1.4px
+  text-decoration: none
+  color: $text-color
+  &__avatar
+    width: 40px
+    height: 40px
+    border-radius: 50%
+    object-fit: cover
+  &__name
+    margin-left: 18px
