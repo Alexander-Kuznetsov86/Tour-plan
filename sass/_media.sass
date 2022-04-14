@@ -15,11 +15,29 @@
 @media ( max-width: 768px )
   .container
     max-width: 94%
+  .nav
+    &__link
+      font-size: 12px
+@media ( max-width: 700px )
   .header
-    &__logo
-      width: 100px
     &__search
       display: none
   .user
     display: none
-  
+  .burger-menu
+    display: flex
+    flex-direction: column
+    justify-content: space-between
+    width: 16px
+    height: 11px
+    padding: 0
+    
+    border: none
+    background-color: #fff
+    cursor: pointer
+    &__line
+      width: 16px
+      height: 1px
+      background-color: $text-color
+  .nav
+    display: none
