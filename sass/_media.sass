@@ -14,7 +14,7 @@
       width: 340px
 @media ( max-width: 768px )
   .container
-    max-width: 94%
+    max-width: 89%
   .nav
     &__link
       font-size: 12px
@@ -31,7 +31,7 @@
     width: 16px
     height: 11px
     padding: 0
-    
+
     border: none
     background-color: #fff
     cursor: pointer
@@ -41,3 +41,21 @@
       background-color: $text-color
   .nav
     display: none
+  .hotel
+    &__flex
+      display: flex
+      flex-wrap: wrap
+      justify-content: space-between
+    &__rating-stars
+      max-width: max-content
+      order: 0
+    &__title
+      margin-top: 10px
+      order: 1
+      flex-basis: 100%
+    &__flash-offer
+      order: -1
+    &__features
+      order: 2
+    &__user-rating
+      display: none

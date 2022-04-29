@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
+    <!-- Шапка сайта -->
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
@@ -26,11 +27,11 @@
             <span class="user__name">Nathan</span>
           </a>
 
-          <buttton class="burger-menu" type="button">
+          <button class="burger-menu" type="button">
             <span class="burger-menu__line"></span>
             <span class="burger-menu__line"></span>
             <span class="burger-menu__line"></span>
-          </buttton>
+          </button>
         </div>
         <!-- /.header__wrapper -->
       </div>
@@ -50,6 +51,47 @@
         </div>
         <!-- /.container -->
       </nav>
+
+      <nav class="breadcrumb">
+        <div class="container">
+          <ul class="breadcrumb__list">
+            <li class="breadcrumb__item"><a href="#!" class="breadcrumb__link">Home</a></li>
+            <li class="breadcrumb__item"><a href="#!" class="breadcrumb__link">Flash Offers</a></li>
+            <li class="breadcrumb__item">Grand Hilton Hotel</li>
+          </ul>
+        </div>
+        <!-- /.container -->
+      </nav>
     </header>
+
+    <!-- Секция hotel -->
+    <section class="hotel">
+      <div class="container">
+        <div class="hotel__wrap">
+          <div class="hotel__flex">
+            <div class="hotel__rating-stars">
+              <img src="./img/svg/star.svg" alt="Star" class="hotel__stars" />
+              <img src="./img/svg/star.svg" alt="Star" class="hotel__stars" />
+              <img src="./img/svg/star.svg" alt="Star" class="hotel__stars" />
+              <img src="./img/svg/star.svg" alt="Star" class="hotel__stars" />
+              <img src="./img/svg/star.svg" alt="Star" class="hotel__stars" />
+            </div>
+            <!-- /.hotel__raiting-stars -->
+            <h1 class="hotel__title">grand hilton hotel</h1>
+            <span class="hotel__flash-offer">Flash offer</span>
+            <span class="hotel__features">Half-Board/ All Inclusive + Complimentary Activities + Child Stays Free</span>
+          </div>
+          <!-- /.hotel__flex -->
+
+          <div class="hotel__user-rating">
+            <span class="hotel__user-text">User rattings</span>
+            <span class="hotel__user-numbers">4.5/<span class="hotel__user-counter">5</span></span>
+          </div>
+          <!-- /.hotel__user-raiting -->
+        </div>
+        <!-- /.hotel__wrap -->
+      </div>
+      <!-- /.container -->
+    </section>
   </body>
 </html>
