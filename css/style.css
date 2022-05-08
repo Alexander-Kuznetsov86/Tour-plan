@@ -558,7 +558,9 @@ img {
 }
 .hotel__flash-offer {
   display: inline-block;
-  vertical-align: text-top;
+  vertical-align: text-bottom;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
   padding: 7px 9px;
   background-color: #ec1f46;
   border-radius: 3px;
