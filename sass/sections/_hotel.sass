@@ -6,8 +6,9 @@
     justify-content: space-between
     align-items: center
     flex-wrap: wrap
+    padding-bottom: 20px
   &__rating-stars
-    flex-basis: 100%    
+    flex-basis: 100%
   &__title
     margin-top: 4px
     margin-bottom: 0
@@ -52,3 +53,40 @@
     line-height: 1.18
   &__user-counter
     font-size: 10px
+  &-preview
+    display: flex
+  .swiper
+    position: relative
+    max-width: 728px
+    max-height: 450px
+    border-radius: 8px
+    &::after
+      content: ""
+      position: absolute
+      width: 100%
+      height: 100%
+      top: 0
+      bottom: 0
+      left: 0
+      right: 0
+      z-index: 10
+      background: linear-gradient(180deg, rgba(0, 122, 223, 0.48) 0%, rgba(255, 255, 255, 0.128) 100%)
+    &-button
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      z-index: 100
+      width: 30px
+      height: 30px
+      border: none
+      background-repeat: no-repeat
+      background-position: center
+      background-size: 10px
+      background-color: transparent
+      cursor: pointer
+      &--next
+        right: 18px
+        background-image: url(../img/svg/arrow-next.svg)
+      &--prev
+        left: 18px
+        background-image: url(../img/svg/arrow-prev.svg)
