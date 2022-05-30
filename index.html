@@ -151,10 +151,17 @@
               </div>
               <!-- /.booking__text-->
               <div class="booking__info">
-                <img class="booking__user" src="./img/svg/user-ico.svg" alt="Icon: User">
-                <span class="booking__guests">2 x Guests</span>
-                <img class="booking__home" src="./img/svg/home-ico.svg" alt="Icon: Home">
-                <span class="booking__guests">1 x Room</span>
+                <div class="booking__container">
+                  <img class="booking__user booking__img" src="./img/svg/user-ico.svg" alt="Icon: User">
+                  <span class="booking__guests">2 x Guests</span>
+                </div>
+                <!-- /.booking__container -->
+                
+                <div class="booking__container">
+                  <img class="booking__home booking__img" src="./img/svg/home-ico.svg" alt="Icon: Home">
+                  <span class="booking__guests">1 x Room</span>
+                </div>
+                <!-- /.booking__container -->
               </div>
               <!-- /.booking__info -->
             </div>
@@ -164,14 +171,15 @@
             <div class="booking__wrap">
               <span class="booking__quik">Quick Booking</span>
               <a class="booking__call" href="tel:12100">
-                <img class="booking__phone" src="./img/svg/phone-call-ico.svg" alt="Icon: Phone">
+                <img class="booking__phone booking__img" src="./img/svg/phone-call-ico.svg" alt="Icon: Phone">
                 12100
               </a>
             </div>
             <!-- /.booking__quik -->
             
             <!-- booking__button -->
-            <button class="button booking__button">View Other Options</button>
+            <button type="button" class="button booking__button">View Other Options</button>
+            
           </div>
           <!-- /.booking -->
         </div>
