@@ -59,6 +59,9 @@
     display: flex
     justify-content: space-between
     align-items: flex-start
+    &__flex
+      display: flex
+      flex-direction: column
   .swiper
     margin: 0
     position: relative
@@ -98,6 +101,7 @@
   .booking
     max-width: 350px
     min-height: 210px
+    margin-bottom: 27px
     padding: 28px
     background-color: $dark
     border-radius: 8px
@@ -154,3 +158,10 @@
       font-size: 14px
       line-height: 19px
       cursor: pointer
+  .map
+    &__iframe
+      width: 350px
+      height: 210px
+      background-color: #ccc
+      border-radius: 8px
+      border: none
