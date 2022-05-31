@@ -776,7 +776,7 @@ img {
   cursor: pointer;
 }
 .hotel .map {
-  width: 100%;
+  max-width: 350px;
   height: 215px;
   background-color: #ccc;
   overflow: hidden;
